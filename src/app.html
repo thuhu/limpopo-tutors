@@ -1,0 +1,20 @@
+<template>
+  <require from="./styles.css"></require>
+  <require from="./menu"></require>
+  <require from="./menu-list"></require>
+
+  <nav class="navbar navbar-light bg-light fixed-top" role="navigation">
+    <a class="navbar-brand" href="#">
+      <i class="fa fa-user"></i>
+      <span>Tutors</span>
+    </a>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <menu-list class="col-md-4"></menu-list>
+      <router-view class="col-md-8"></router-view>
+    </div>
+  </div>
+
+</template>

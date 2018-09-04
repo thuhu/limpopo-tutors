@@ -1,0 +1,28 @@
+<template>
+
+  <require from="./styles.css"></require>
+  <require from="./menu"></require>
+  <require from="./menu-list"></require>
+
+  <script src="https://jdanyow.github.io/rjs-bundle/node_modules/requirejs/require.js"></script>
+  <script src="https://jdanyow.github.io/rjs-bundle/config.js"></script>
+  <script src="https://jdanyow.github.io/rjs-bundle/bundles/aurelia.js"></script>
+  <script src="https://jdanyow.github.io/rjs-bundle/bundles/babel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <nav class="navbar navbar-light bg-light fixed-top" role="navigation">
+    <a class="navbar-brand" href="#">
+      <i class="fa fa-home"></i>
+      <span>Dashboard</span>
+    </a>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <menu-list class="col-md-2"></menu-list>
+      <router-view class="col-md-10"></router-view>
+    </div>
+  </div>
+
+</template>

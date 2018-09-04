@@ -1,0 +1,90 @@
+<template>
+
+  <require from="./styles.css"></require>
+  <require from="./menu"></require>
+  <require from="./menu-list"></require>
+
+  <script src="https://jdanyow.github.io/rjs-bundle/node_modules/requirejs/require.js"></script>
+  <script src="https://jdanyow.github.io/rjs-bundle/config.js"></script>
+  <script src="https://jdanyow.github.io/rjs-bundle/bundles/aurelia.js"></script>
+  <script src="https://jdanyow.github.io/rjs-bundle/bundles/babel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <div class="panel-heading">
+    <h3 class="panel-title">Individual</h3>
+  </div>
+
+  <div class="panel-body border-primary">
+    <form role="form" class="form-horizontal">
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Username</label>
+        <div class="col-sm-10">
+          <input type="text" placeholder="Username" class="form-control" value.bind="individual.username">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+          <input type="text" placeholder="password" class="form-control" value.bind="individual.password">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">First Name</label>
+        <div class="col-sm-10">
+          <input type="text" placeholder="firstName" class="form-control" value.bind="individual.firstName">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Last Name</label>
+        <div class="col-sm-10">
+          <input type="text" placeholder="lastName" class="form-control" value.bind="individual.lastName">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" placeholder="Email" class="form-control" value.bind="individual.emailAddress">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Cell</label>
+        <div class="col-sm-10">
+          <input type="text" placeholder="Cell" class="form-control" value.bind="individual.cellPhoneNumber">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Car Registration</label>
+        <div class="col-sm-10">
+          <input type="text" placeholder="Car Registration" class="form-control" value.bind="individual.carRegistration">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Register as</label>
+        <div class="col-sm-6">
+          <select class="col-sm-10 custom-select custom-select-md">
+            <option selected>Customer</option>
+            <option value="2">Driver</option>
+          </select>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div class="button-bar">
+  <button class="btn btn-success" click.delegate="save()">Save</button>
+  <button class="btn btn-success" click.delegate="cancel()">Cancel</button>
+</div>
+
+</template>
