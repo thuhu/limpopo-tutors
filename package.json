@@ -48,7 +48,7 @@
     "connect-history-api-fallback": "^1.2.0",
     "debounce": "^1.0.2",
     "eslint": "^3.19.10",
-    "popper": "^1.14.3",
+    "popper": "^1.0.1",
     "eslint-plugin-jasmine": "^2.8.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-append-prepend": "^1.0.4",
