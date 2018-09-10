@@ -16,5 +16,15 @@ export class MenuList {
                      ];
 
   }
+  configureRouter(config, router){
+    config.title = 'Menu';
+    config.map([
+      { route: '',          moduleId: PLATFORM.moduleName('welcome'),   title: 'Home'},
+      { route: 'login',     moduleId: PLATFORM.moduleName('login-screen'),   title:'login' },
+      { route: 'register',     moduleId: PLATFORM.moduleName('individual'),  title:'registerItem' },
+      { route: 'about',     moduleId: PLATFORM.moduleName('about'),  title:'about' }
+    ]);
 
+    this.router = router;
+  }
 }
